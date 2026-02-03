@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-size: 12px;
+      }
+
+      .box {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 344px; */
+        /* width: 100; */
+        width: 80vw;
+        margin: auto;
+        background-color: aqua;
+      }
+
+      .container {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 100; */
+        width: 80vw;
+        /* height: 80vh; */
+        /* padding: 30px; */
+        /* overflow: auto; */
+        min-height: 80vh;
+        margin: 23px auto;
+        font-size: 18px;
+        background-color: aqua;
+      }
+      .container > div {
+        font-size: 2em;
+        border: 2px solid red;
+        width: 50%;
+      }
+
+      .container > div> div{
+        border: 2px solid blue;
+        width: 50%;
+      }
+
+      .mycout {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* background-color: yellow; */
+        margin: 23px auto;
+        color: rgb(61, 88, 120);
+        font-size: 22px;
+        width: 80vmin;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units -->
+    <div class="box">This is a box</div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur vel
+        nostrum beatae nobis expedita, assumenda illum, distinctio quis
+        laboriosam suscipit porro harum accusamus, fugit iure soluta aliquam
+        optio explicabo a deserunt. Animi porro veniam itaque voluptatem ullam
+        architecto voluptas, accusamus beatae consequatur ex. Sed incidunt omnis
+        atque, placeat expedita, cupiditate quas magnam, dolores mollitia enim
+        nihil!
+        <div>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+          ducimus ullam voluptas voluptatibus dolores libero deserunt eum est
+          autem vero, qui sit vel!
+        </div>
+    </div> 
+
+      consequatur illo libero quod, fugiat suscipit ab adipisci neque maxime
+      incidunt. Minus exercitationem velit neque voluptatibus cumque quam fugit
+      fuga odit, eius, inventore, voluptas quae recusandae nemo ab itaque
+      explicabo delectus placeat modi distinctio aperiam. Perspiciatis unde,
+      perferendis in labore iure voluptas a voluptatum ad fuga. Quas, dolor?
+      Repellat sint aliquam laboriosam fugiat ea maxime totam, libero tenetur
+      molestiae quod cum sed obcaecati autem dignissimos dicta quidem. Harum
+      distinctio modi est minus eligendi sequi maxime tempora mollitia quisquam.
+      Recusandae adipisci laudantium cupiditate quae ipsa perferendis a
+      assumenda, sunt alias, nemo obcaecati est ipsum beatae veritatis at minus.
+      Repellat autem quidem modi, ratione ab voluptates nisi aperiam quibusdam
+      ducimus, cumque obcaecati nesciunt ipsum dignissimos sunt culpa
+      repudiandae, eum iste eaque. Laborum, hic nemo.
+    </div>
+
+    <div class="mycout">I am other content</div>
+  </body>
+</html>

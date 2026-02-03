@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color: cyan;
+        } */
+
+
+         /* class Selector */
+        .cyan{
+            background-color: cyan;
+        }
+        /* Id Seclector */
+        #green{
+            background-color: deepskyblue;
+        }
+        /* child Selectors */
+        div > p {
+            color: blue;
+            background-color: aqua;
+        }
+        /* Descendent Seclector */
+        div p {
+            color: burlywood;
+            background-color:  brown;
+        }
+        /* Universal selector */
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        /* pseudo Selector */
+        a:visited{
+            color: deeppink;
+        }
+
+        a:link{
+            color: cyan;
+        }
+        a:active{
+            background-color:cyan
+        }
+
+        a:hover{
+            background-color: skyblue;
+        }
+
+        p:first-child{
+            background-color: springgreen;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main class="One">
+        <p>whay it dose meay</p>
+        <p> I am good</p>
+    </main>
+    <div class="cyan">
+        I am div
+        <article>
+        <p> I am a para inside div </p>
+        </article>
+    </div>
+
+    <div id = "green">
+        I my good boy??
+    </div>
+    <a href="https://www.Google.com"> Go to Google</a>
+    <a href="https://web.dev/learn/css/pseudo-classes.com"> Go to https://web.dev/learn/css/pseudo-classesk</a>
+</body>
+</html>
+
+<!-- # NOTES SHIFT+S Spsce -->

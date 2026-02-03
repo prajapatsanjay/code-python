@@ -1,0 +1,189 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks Manager - CodeWithSanjay</title>
+</head>
+<body>
+    <h1>My Bookmarks - CodeWithsanjayprajapat</h1>
+    <h2>Primary Bookmarks</h2>
+    <p>
+    <a target="_blank" href="https://www.youtube.com">Open youtube</a>
+    </p>
+    <p></p><a target="_blank" href="https://www.Google.com">Open Google</a></p>
+     <p></p><a target="_blank" href="https://www. Facebook.com">Open Facebook</a></p>
+     <p></p><a target="_blank" href="https://www.CodeWithHarry.com">Open CodeWithHarry</a></p>
+     <p></p><a target="_blank" href="https://www.datacamp.com">Open datacamp </a></p>
+
+
+    <h2>Secondary Bookmarks</h2>
+    <p></p><a target="_blank" href="https://www.Wikipedia.com">Open Wikipedia</a></p>
+    <p></p><a target="_blank" href="https://www.stackoverflow.com">Open stackoverFlow</a></p>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks Manager - CodeWithSanjay</title>
+
+    <!-- 🌈 CSS Styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f6ff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            background: #9f4ee1;
+            color: rgb(15, 2, 2);
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Animated Heading */
+        .main-heading {
+            margin-top: 30px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #45baf4;
+        }
+
+        .main-heading span {
+            color: #68a3e6;
+        }
+
+        /* ✅ mx-2 Class Added */
+        .mx-2 {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        /* Cursor Animation */
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            height: 30px;
+            background: #0077ff;
+            margin-left: 5px;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Search Bar */
+        #searchBox {
+            width: 60%;
+            padding: 12px;
+            font-size: 16px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 2px solid #0077ff;
+            outline: none;
+        }
+
+        /* Bookmark Buttons */
+        .bookmark-btn {
+            display: block;
+            width: 60%;
+            margin: 12px auto;
+            padding: 14px;
+            background: white;
+            color: #0077ff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .bookmark-btn:hover {
+            background: #0077ff;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📌 My Bookmarks - CodeWithSanjayPrajapat</h1>
+
+    <!-- ✅ Animated Heading with mx-2 -->
+    <h2 class="main-heading">
+        Learn 
+        <span id="typedText" class="mx-2">Python</span>
+        <span class="lang"></span>
+    </h2>
+
+    <!-- 🔍 Search Bar -->
+    <input type="text" id="searchBox" placeholder="Search Bookmarks...">
+
+    <!-- ⭐ Primary Bookmarks -->
+    <h2>Primary Bookmarks</h2>
+
+    <a class="bookmark-btn" target="_blank" href="https://www.youtube.com">Open YouTube</a>
+    <a class="bookmark-btn" target="_blank" href="https://www.google.com">Open Google</a>
+    <a class="bookmark-btn" target="_blank" href="https://www.facebook.com">Open Facebook</a>
+    <a class="bookmark-btn" target="_blank" href="https://www.codewithharry.com">Open CodeWithHarry</a>
+    <a class="bookmark-btn" target="_blank" href="https://www.datacamp.com">Open DataCamp</a>
+    <a class="bookmark-btn" target="_blank" href="https://www.github.com">Open GitHub</a>
+
+    <!-- 🌍 Secondary Bookmarks -->
+    <h2>Secondary Bookmarks</h2>
+
+    <a class="bookmark-btn" target="_blank" href="https://www.wikipedia.org">Open Wikipedia</a>
+    <a class="bookmark-btn" target="_blank" href="https://stackoverflow.com">Open StackOverflow</a>
+    <a class="bookmark-btn" target="_blank" href="https://chat.openai.com">Open ChatGPT</a>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Bookmarks Manager | Made by CodeWithSanjay 🚀
+    </footer>
+
+    <!-- 🔥 JavaScript -->
+    <script>
+        let searchBox = document.getElementById("searchBox");
+        let bookmarks = document.querySelectorAll(".bookmark-btn");
+
+        searchBox.addEventListener("keyup", function () {
+            let value = searchBox.value.toLowerCase();
+
+            bookmarks.forEach(function (bookmark) {
+                let text = bookmark.textContent.toLowerCase();
+
+                bookmark.style.display = text.includes(value) ? "block" : "none";
+            });
+        });
+
+        // ✅ Typing Effect
+        let words = ["Python", "HTML", "CSS", "JavaScript"];
+        let index = 0;
+
+        setInterval(() => {
+            document.getElementById("typedText").innerText = words[index];
+            index = (index + 1) % words.length;
+        }, 1500);
+    </script>
+
+</body>
+</html>

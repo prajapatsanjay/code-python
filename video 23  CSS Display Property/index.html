@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css Display property</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        border: 2px solid blue;
+        display: inline-block;
+        width: 334px;
+        padding: 45px;
+        margin: 5px;
+        background-color: lightblue;}
+
+    .box1{
+        /* display: none; */
+        /* visibility: hidden; */
+    }
+    </style>
+  </head>
+  <body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display -->
+    <div class="box box1">I am box</div>
+    <div class="box">also a nice sanjay</div>
+    <span> I am good</span>
+    <span> body</span>
+  </body>
+</html>
+
+<!-- universal selector(*) is used to select all the elements in the document and apply the same styles to them. In this case, it sets the margin and padding of all elements to 0, effectively removing any default spacing that browsers might apply. This is often done to create a consistent starting point for styling a webpage. -->

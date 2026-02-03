@@ -1,0 +1,66 @@
+यह एक CSS unit है जो पूरी वेबसाइट के root font-size ( <html> tag ) पर depend करता है।
+
+मतलब — paragraph का font-size root size का 2 गुना (आमतौर पर 32px) हो जाएगा।
+
+✔️ rem क्यों इस्तेमाल करते हैं?
+
+पूरी site का size आसानी से control होता है
+
+accessibility बेहतर (zoom करने पर text सही scale होता है)
+
+em से ज्यादा predictable होता है
+
+| Unit  | किस पर depend करता है          |
+| ----- | ------------------------------ |
+| `em`  | parent element के font-size पर |
+| `rem` | root (`html`) के font-size पर  |
+
+
+
+
+vmin क्या होता है?
+
+vmin = viewport minimum
+
+यह unit screen (viewport) के छोटे वाले side पर depend करता है —
+यानी width और height में जो कम होगा, उसका 1% = 1vmin।
+
+🔎 Example समझिए
+
+मान लीजिए स्क्रीन का size:
+
+Width = 1200px
+
+Height = 800px
+
+छोटा side = 800px
+
+तो:
+
+1vmin = 1% of 800px = 8px
+
+100vmin = 800px
+
+इसलिए:
+
+width: 100vmin;
+
+
+का मतलब हुआ:
+
+➡️ Element की चौड़ाई screen के छोटे side जितनी हो जाएगी।
+
+👍 क्यों उपयोग करते हैं?
+
+square box बनाना (height और width बराबर रखने के लिए)
+
+responsive layouts में useful
+
+orientation बदलने पर भी सही दिखता है (mobile rotate करने पर)
+
+👀 छोटा comparison
+Unit	Meaning
+vw	viewport width का 1%
+vh	viewport height का 1%
+vmin	width/height में जो छोटा — उसका 1%
+vmax	width/height में जो बड़ा — उसका 1%

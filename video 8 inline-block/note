@@ -1,0 +1,749 @@
+
+C:\Users\USER 4\Sigma web Development Course\video8-inline-block
+🔹 तरीका 1: Direct Browser (सबसे आसान)
+start index.html
+
+
+📘 HTML Block Elements – Simple Explanation (One by One)
+1️⃣ <div>
+
+What does it mean:
+General container – layout बनाने के लिए
+
+Example:
+
+<div>This is a div</div>
+
+
+Notes:
+
+सबसे ज़्यादा इस्तेमाल होता है
+
+CSS styling के लिए best
+
+2️⃣ <p>
+
+What does it mean:
+Paragraph (text लिखने के लिए)
+
+<p>This is a paragraph</p>
+
+
+Notes:
+
+Automatic new line लेता है
+
+3️⃣ <h1> – <h6>
+
+What does it mean:
+Headings (h1 सबसे बड़ा, h6 सबसे छोटा)
+
+<h1>Main Heading</h1>
+
+
+Notes:
+
+SEO में बहुत important
+
+4️⃣ <section>
+
+What does it mean:
+Page का एक section / part
+
+<section>News Section</section>
+
+
+Notes:
+
+Related content group करने के लिए
+
+5️⃣ <article>
+
+What does it mean:
+Independent content (blog, post)
+
+<article>Blog Post</article>
+
+
+Notes:
+
+Section से ज़्यादा specific
+
+6️⃣ <header>
+
+What does it mean:
+Page या section का top part
+
+<header>Website Header</header>
+
+7️⃣ <footer>
+
+What does it mean:
+Page का bottom part
+
+<footer>Copyright 2025</footer>
+
+8️⃣ <nav>
+
+What does it mean:
+Navigation links
+
+<nav>Home | About | Contact</nav>
+
+9️⃣ <main>
+
+What does it mean:
+Main content of website
+
+<main>Main Content</main>
+
+🔟 <aside>
+
+What does it mean:
+Sidebar / extra info
+
+<aside>Ads / Tips</aside>
+
+📋 List Related
+<ul>
+
+Unordered list
+
+<ul><li>Apple</li></ul>
+
+<ol>
+
+Ordered list
+
+<ol><li>Step 1</li></ol>
+
+<li>
+
+List item
+
+<li>Item</li>
+
+📊 Media / Structure
+<table>
+
+Table layout
+
+<table>...</table>
+
+<form>
+
+User input form
+
+<form>Login</form>
+
+<figure>
+
+Image container
+
+<figure>Image</figure>
+
+<figcaption>
+
+Image caption
+
+<figcaption>Image Text</figcaption>
+
+🔹 Others
+<blockquote>
+
+Long quotation
+
+<blockquote>Quote</blockquote>
+
+<pre>
+
+Preformatted text
+
+<pre>Code here</pre>
+
+<hr>
+
+Horizontal line
+
+<hr>
+
+
+
+
+📋 Content / List related Block Elements
+
+(One-by-one, simple meaning + example + notes)
+
+1️⃣ <ul> — Unordered List
+
+What does it mean:
+Bullets वाली list (order matter नहीं करता)
+
+Example:
+
+<ul>
+  <li>Apple</li>
+  <li>Banana</li>
+</ul>
+
+
+Notes:
+
+Default bullets होते हैं
+
+Navigation menu बनाने में बहुत use होता है
+
+2️⃣ <ol> — Ordered List
+
+What does it mean:
+Number वाली list (order important)
+
+Example:
+
+<ol>
+  <li>Step One</li>
+  <li>Step Two</li>
+</ol>
+
+
+Notes:
+
+Steps, instructions के लिए best
+
+Numbers, letters, Roman style possible
+
+3️⃣ <li> — List Item
+
+What does it mean:
+List का एक item
+
+Example:
+
+<li>Item Name</li>
+
+
+Notes:
+
+हमेशा <ul> या <ol> के अंदर होता है
+
+अकेले काम नहीं करता
+
+4️⃣ <dl> — Description List
+
+What does it mean:
+Term और उसके description की list
+
+Example:
+
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+</dl>
+
+
+Notes:
+
+Definition / glossary के लिए use
+
+Bullets या numbers नहीं होते
+
+5️⃣ <dt> — Description Term
+
+What does it mean:
+Term / title
+
+Example:
+
+<dt>CSS</dt>
+
+
+Notes:
+
+<dl> के अंदर use होता है
+
+Heading जैसा दिखता है
+
+6️⃣ <dd> — Description Details
+
+What does it mean:
+Term का explanation
+
+Example:
+
+<dd>Styles the webpage</dd>
+
+
+Notes:
+
+<dt> के नीचे आता है
+
+Thoda indent होता है
+
+🧠 Quick Summary Table
+Tag	Use
+<ul>	Bullet list
+<ol>	Numbered list
+<li>	List item
+<dl>	Description list
+<dt>	Term
+<dd>	Definition
+
+
+
+🧩 Media / Structure & Others – Block Elements
+
+(One-by-one | Meaning + Example + Notes)
+
+🔹 Media / Structure
+1️⃣ <table>
+
+What does it mean:
+Data को rows और columns में दिखाने के लिए
+
+Example:
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Rahul</td>
+    <td>20</td>
+  </tr>
+</table>
+
+
+Notes:
+
+Tables reports, marksheets में use होते हैं
+
+Layout के लिए table use करना ❌ (old method)
+
+2️⃣ <form>
+
+What does it mean:
+User से input लेने के लिए
+
+Example:
+
+<form>
+  <input type="text" placeholder="Enter name">
+  <button>Submit</button>
+</form>
+
+
+Notes:
+
+Login, signup, feedback forms
+
+Backend से data भेजता है
+
+3️⃣ <fieldset>
+
+What does it mean:
+Form के related inputs को group करता है
+
+Example:
+
+<form>
+  <fieldset>
+    <legend>User Info</legend>
+    <input type="text" placeholder="Name">
+  </fieldset>
+</form>
+
+
+Notes:
+
+Form readable बनाता है
+
+<legend> title देता है
+
+4️⃣ <figure>
+
+What does it mean:
+Image / media को wrap करता है
+
+Example:
+
+<figure>
+  <img src="image.jpg" width="150">
+</figure>
+
+
+Notes:
+
+Image + caption के लिए perfect
+
+SEO friendly
+
+5️⃣ <figcaption>
+
+What does it mean:
+Figure का caption / description
+
+Example:
+
+<figure>
+  <img src="image.jpg" width="150">
+  <figcaption>Sample Image</figcaption>
+</figure>
+
+
+Notes:
+
+<figure> के अंदर ही आता है
+
+🔹 Others
+6️⃣ <blockquote>
+
+What does it mean:
+Long quotation दिखाने के लिए
+
+Example:
+
+<blockquote>
+  Learning never stops.
+</blockquote>
+
+
+Notes:
+
+Quotes websites, articles में
+
+Default indent देता है
+
+7️⃣ <pre>
+
+What does it mean:
+Pre-formatted text (spaces & line breaks preserved)
+
+Example:
+
+<pre>
+Hello   World
+  HTML
+</pre>
+
+
+Notes:
+
+Code दिखाने के लिए best
+
+Formatting नहीं बदलता
+
+8️⃣ <hr>
+
+What does it mean:
+Horizontal line / section divider
+
+Example:
+
+<hr>
+
+
+Notes:
+
+Content को visually separate करता है
+
+Self-closing tag
+
+🧠 Quick Revision Table
+Tag	Use
+<table>	Tabular data
+<form>	User input
+<fieldset>	Group form fields
+<figure>	Media container
+<figcaption>	Media caption
+<blockquote>	Long quote
+<pre>	Preformatted text
+<hr>	Divider line
+🎯 Exam Tip
+
+<figure> + <figcaption> = image with caption
+
+<pre> = code display
+
+<form> = most important tag
+
+
+
+
+
+
+🔹 Most Common Inline Elements (Top to Bottom)
+
+(One-by-one | Meaning + Example + Notes)
+
+1️⃣ <span>
+
+What does it mean:
+Inline container – styling के लिए
+
+Example:
+
+<span style="color:red;">Red Text</span>
+
+
+Notes:
+
+div का inline version
+
+CSS apply करने के लिए सबसे ज़्यादा use होता है
+
+2️⃣ <a>
+
+What does it mean:
+Link / hyperlink
+
+Example:
+
+<a href="https://google.com">Google</a>
+
+
+Notes:
+
+Website navigation के लिए important
+
+Inline होते हुए भी clickable होता है
+
+3️⃣ <img>
+
+What does it mean:
+Image show करने के लिए
+
+Example:
+
+<img src="photo.jpg" alt="My Photo">
+
+
+Notes:
+
+Self-closing tag
+
+Inline element है लेकिन width/height accept करता है
+
+4️⃣ <strong>
+
+What does it mean:
+Important text (bold + semantic)
+
+Example:
+
+<strong>Important</strong>
+
+
+Notes:
+
+SEO और accessibility के लिए अच्छा
+
+<b> से better माना जाता है
+
+5️⃣ <em>
+
+What does it mean:
+Emphasized text (italic + meaning)
+
+Example:
+
+<em>Important word</em>
+
+
+Notes:
+
+Screen readers importance समझते हैं
+
+6️⃣ <b>
+
+What does it mean:
+Bold text (only style)
+
+Example:
+
+<b>Bold Text</b>
+
+
+Notes:
+
+Visual bold, semantic meaning नहीं
+
+7️⃣ <i>
+
+What does it mean:
+Italic text
+
+Example:
+
+<i>Italic Text</i>
+
+
+Notes:
+
+Mostly styling के लिए
+
+8️⃣ <label>
+
+What does it mean:
+Input field का name / title
+
+Example:
+
+<label>Username:</label>
+
+
+Notes:
+
+Forms में accessibility improve करता है
+
+9️⃣ <input>
+
+What does it mean:
+User input field
+
+Example:
+
+<input type="text">
+
+
+Notes:
+
+Login, signup forms में use
+
+Self-closing tag
+
+🔟 <button>
+
+What does it mean:
+Clickable button
+
+Example:
+
+<button>Submit</button>
+
+
+Notes:
+
+Click events के लिए
+
+Inline element होते हुए block जैसा behave कर सकता है
+
+1️⃣1️⃣ <small>
+
+What does it mean:
+Small size text
+
+Example:
+
+<small>Terms apply</small>
+
+
+Notes:
+
+Footer, copyright text
+
+1️⃣2️⃣ <mark>
+
+What does it mean:
+Highlighted text
+
+Example:
+
+<mark>Important</mark>
+
+
+Notes:
+
+Search results highlight में use
+
+1️⃣3️⃣ <code>
+
+What does it mean:
+Code text display
+
+Example:
+
+<code>console.log()</code>
+
+
+Notes:
+
+Programming blogs में common
+
+1️⃣4️⃣ <abbr>
+
+What does it mean:
+Abbreviation
+
+Example:
+
+<abbr title="HyperText Markup Language">HTML</abbr>
+
+
+Notes:
+
+Hover करने पर full form दिखता है
+
+1️⃣5️⃣ <sub>
+
+What does it mean:
+Subscript text (नीचे)
+
+Example:
+
+H<sub>2</sub>O
+
+
+Notes:
+
+Chemistry, math में use
+
+1️⃣6️⃣ <sup>
+
+What does it mean:
+Superscript text (ऊपर)
+
+Example:
+
+x<sup>2</sup>
+
+
+Notes:
+
+Power, square, footnotes
+
+🧠 Quick Revision Table
+Tag	Use
+span	Inline styling
+a	Link
+img	Image
+strong	Important text
+em	Emphasis
+input	User input
+button	Click action
+code	Code text
+sub/sup	Math & science
+
+
+
+| Tag        | Meaning                      |
+| ---------- | ---------------------------- |
+| `<span>`   | Inline container for styling |
+| `<a>`      | Link                         |
+| `<img>`    | Image                        |
+| `<strong>` | Important text (bold)        |
+| `<em>`     | Emphasized text (italic)     |
+| `<b>`      | Bold text                    |
+| `<i>`      | Italic text                  |
+| `<label>`  | Input label                  |
+| `<input>`  | User input field             |
+| `<button>` | Clickable button             |
+| `<small>`  | Small text                   |
+| `<mark>`   | Highlight text               |
+| `<code>`   | Code text                    |
+| `<abbr>`   | Abbreviation                 |
+| `<sub>`    | Subscript                    |
+| `<sup>`    | Superscript                  |
+
+
+without using br tag, write a vertically aligned form asking for name, city and pincode od a user.
